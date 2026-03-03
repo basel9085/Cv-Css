@@ -2,73 +2,295 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Profile</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Mohamed — Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Floating Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">A<span>M</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
 
-    <h1>Basel Mohamed Portfolio</h1>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-greeting animate-fade-up">Hello, I'm</p>
+            <h1 class="hero-name animate-fade-up delay-1">Ahmed Mohamed</h1>
+            <div class="hero-titles animate-fade-up delay-2">
+                <span class="title-badge">Data Analyst</span>
+                <span class="title-badge">Motion Graphics Designer</span>
+            </div>
+            <p class="hero-tagline animate-fade-up delay-3">Combining analytical thinking with design principles to deliver clear insights and impactful visual results.</p>
+            <div class="hero-cta animate-fade-up delay-4">
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+        </div>
+    </section>
 
-    <div class="section">
-        <h2>About Me</h2>
-        <p>Hey! I'm <strong>Basel</strong>, a computer engineering student at <strong>Misr University for Science and Technology</strong> in Cairo, Egypt. Motion Graphics Designer | Video Editor | Creative Visual Storyteller.</p>
-        <p> a creative Motion Graphics Designer and Computer Engineering student with a passion for turning ideas into engaging visual stories.</p>
-        <p>I specialize in creating eye-catching motion graphics, animated social media content, explainer videos, and promotional videos that help brands stand out and connect with their audience. Using tools like Adobe After Effects and Adobe Illustrator, I focus on smooth animations, clean design, and strong visual impact.
-            With a background in programming (C++ and Front-End Development), I bring structured thinking and problem-solving skills into my creative work — ensuring projects are delivered efficiently, professionally, and on time.</p>
-        <p>
-            What I can help you with:
-        • Social Media Motion Graphics
-        • Animated Ads & Promotional Videos
-        • Logo Animation
-        • Explainer Videos
-        • Text Animation
-        • Video Editing
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Data Analysis</h3>
+                    <p>Data Analysis student at <strong>Cairo University — Faculty of Computers and Artificial Intelligence</strong>. I specialize in data analysis and visualization, transforming raw data into actionable insights using modern tools and techniques.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Motion Graphics</h3>
+                    <p>A Motion Graphics Designer in training, I craft creative visual storytelling through motion graphics and video editing. I bring ideas to life with smooth animations, clean design, and strong visual impact.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>My Approach</h3>
+                    <p>I combine analytical thinking with design principles to deliver clear insights and impactful visual results — bridging the gap between data and creativity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        I’m committed to quality, creativity, and clear communication. Let’s work together to bring your vision to life.</p>
-    </div>
+    <!-- Profession Section -->
+    <section class="section section-alt" id="profession">
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <div class="profession-grid">
+                <div class="profession-card">
+                    <div class="profession-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Analyst</h3>
+                    <p>Turning complex data into clear, actionable insights through advanced analysis, visualization, and reporting.</p>
+                    <div class="profession-tags">
+                        <span>Data Cleaning</span>
+                        <span>Visualization</span>
+                        <span>Reporting</span>
+                        <span>Dashboards</span>
+                    </div>
+                </div>
+                <div class="profession-card">
+                    <div class="profession-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Motion Graphics Designer</h3>
+                    <p>Creating engaging visual content, from animated social media graphics to explainer videos and promotional material.</p>
+                    <div class="profession-tags">
+                        <span>Animation</span>
+                        <span>Video Editing</span>
+                        <span>Visual Effects</span>
+                        <span>Branding</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="section profile-img">
-        <img src="https://cdn-icons-png.flaticon.com/512/9203/9203764.png" alt="Profile Picture">
-    </div>
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-category">
+                <h3 class="skills-cat-title"><i class="fas fa-chart-bar"></i> Data & Analytics</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 128 128"><path fill="#3776AB" d="M49.33 62h29.159C86.606 62 93 55.132 93 46.981V19.183c0-7.912-6.632-13.856-14.555-15.176-5.014-.835-10.195-1.215-15.187-1.191-4.99.023-9.612.448-13.805 1.191C37.098 6.188 35 10.758 35 19.183V30h29v4H23.776c-8.484 0-15.914 5.108-18.237 14.811-2.681 11.12-2.8 18.062 0 29.674C7.473 86.746 12.321 93 20.776 93H31V79.952c0-9.66 8.35-18.176 18.33-17.952zm-1.838-39.11c-3.026 0-5.478-2.479-5.478-5.545 0-3.079 2.451-5.581 5.478-5.581 3.015 0 5.479 2.502 5.479 5.581-.001 3.066-2.464 5.545-5.479 5.545zm74.789 25.921C120.183 40.363 115.236 34 106.893 34H97v12.981C97 56.785 88.374 65 78.67 65H49.51c-8.006 0-14.51 6.88-14.51 14.89v27.8c0 7.912 6.883 12.564 14.555 14.89 9.18 2.782 17.975 3.287 29.004 0C85.108 120.469 93 116.292 93 108.69V98H64v-4h43.776c8.484 0 11.647-5.922 14.555-14.811 2.998-9.149 2.872-17.952 0-29.378zM80.003 104.781c3.027 0 5.478 2.479 5.478 5.545 0 3.079-2.451 5.581-5.478 5.581-3.015 0-5.479-2.502-5.479-5.581 0-3.066 2.465-5.545 5.479-5.545z"/></svg>
+                        </div>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 128 128"><path fill="#217346" d="M116.4 10H79.6L48 48l-4-4L12 10H0v108h12l32-34 4-4 31.6 38h36.8L76 64l40.4-54z"/><path fill="#217346" d="M0 10v108h48V78L12 118H0V10h12l36 40V10H0z" opacity=".3"/><rect width="72" height="88" x="20" y="20" fill="#217346" rx="4"/><text x="56" y="76" fill="white" font-family="Arial,sans-serif" font-size="48" font-weight="bold" text-anchor="middle">X</text></svg>
+                        </div>
+                        <span>Excel</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 128 128"><path fill="#00758F" d="M2 33v62h124V33H2zm62 52H12V43h52v42zm52 0H72V43h44v42z"/><text x="38" y="74" fill="white" font-family="Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="middle">SQL</text></svg>
+                        </div>
+                        <span>SQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 128 128"><defs><linearGradient id="pbi" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#F2C811"/><stop offset="100%" style="stop-color:#F2A611"/></linearGradient></defs><rect width="100" height="100" x="14" y="14" fill="url(#pbi)" rx="12"/><rect width="16" height="50" x="32" y="34" fill="white" rx="4"/><rect width="16" height="38" x="56" y="46" fill="white" rx="4"/><rect width="16" height="26" x="80" y="58" fill="white" rx="4"/></svg>
+                        </div>
+                        <span>Power BI</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 128 128"><circle cx="64" cy="64" r="54" fill="#E97627"/><path fill="white" d="M40 40h48v8H72v40h-8V48H52v32h-8V48h-4v-8z"/></svg>
+                        </div>
+                        <span>Tableau</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3 class="skills-cat-title"><i class="fas fa-wand-magic-sparkles"></i> Creative & Design</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <span>Motion Graphics</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-scissors"></i>
+                        </div>
+                        <span>Video Editing</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-object-group"></i>
+                        </div>
+                        <span>Animation Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="section">
-        <h2>Profession</h2>
-        <ul>
-            <li>Motion graphic desgin</li>
-            <li>websites building</li>
-            <li>video editing</li>
-        </ul>
-    </div>
+    <!-- Tools Section -->
+    <section class="section section-alt" id="tools">
+        <div class="container">
+            <h2 class="section-title">Tools I Use</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" alt="Adobe After Effects" class="tool-logo">
+                    <span>Adobe After Effects</span>
+                </div>
+                <div class="tool-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="Adobe Illustrator" class="tool-logo">
+                    <span>Adobe Illustrator</span>
+                </div>
+                <div class="tool-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" alt="Adobe Premiere Pro" class="tool-logo">
+                    <span>Adobe Premiere Pro</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming in C, C++, and Python</li>
-            <li>Basic web development (HTML/CSS/js)</li>
-            <li>Adobe After Effects</li>
-            <li>Adobe Illustrator</li>
-            <li>Adobe Premiere Pro </li>
-            <li>Adobe Adobe InDesign</li>
-        </ul>
-    </div>
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-subtitle">Have a project in mind? I'd love to hear about it. Reach out through any of the channels below.</p>
+            <div class="contact-grid">
+                <a href="mailto:ahmedmohamed8464@gmail.com" class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>ahmedmohamed8464@gmail.com</p>
+                </a>
+                <a href="tel:+2001003581265" class="contact-card">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Phone</h3>
+                    <p>01003581265</p>
+                </a>
+                <a href="https://www.linkedin.com/in/ahmed-mohamed-bab038380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>Ahmed Mohamed</p>
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <div class="section contact">
-        <h2>Contact Info</h2>
-        <p>Email: <a href="mailto:baselmohamed9085@gmail.com">baselmohamed9085@gmail.com</a><br>
-        Phone: <span>01000928095</span></p>
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-logo">Ahmed <span>Mohamed</span></p>
+                <p class="footer-text">Data Analyst & Motion Graphics Designer</p>
+                <div class="footer-links">
+                    <a href="mailto:ahmedmohamed8464@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/ahmed-mohamed-bab038380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <div class="section">
-        <h2>Favourtie quote</h2>
-        <blockquote>"The best way to predict the future is to invent it." - Alan Kay</blockquote>
-    </div>
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
 
-    <div class="section">
-        <h2>Links</h2>
-        <p>Visit my <a href="https://www.linkedin.com/in/basel-mohamed-khairy-b0247737b/">linkedin</a> profile.</p>
-    </div>
+        // Mobile nav toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
 
+        // Close mobile nav on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.about-card, .profession-card, .skill-card, .tool-card, .contact-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
-
