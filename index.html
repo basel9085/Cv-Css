@@ -2,73 +2,422 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Profile</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basel Mohamed — Motion Graphics Designer & Video Editor</title>
+    <meta name="description" content="Portfolio of Basel Mohamed — Motion Graphics Designer, Video Editor, and Creative Visual Storyteller based in Cairo, Egypt.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Basel Mohamed Portfolio</h1>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">B<span>.</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Get in Touch</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="section">
-        <h2>About Me</h2>
-        <p>Hey! I'm <strong>Basel</strong>, a computer engineering student at <strong>Misr University for Science and Technology</strong> in Cairo, Egypt. Motion Graphics Designer | Video Editor | Creative Visual Storyteller.</p>
-        <p> a creative Motion Graphics Designer and Computer Engineering student with a passion for turning ideas into engaging visual stories.</p>
-        <p>I specialize in creating eye-catching motion graphics, animated social media content, explainer videos, and promotional videos that help brands stand out and connect with their audience. Using tools like Adobe After Effects and Adobe Illustrator, I focus on smooth animations, clean design, and strong visual impact.
-            With a background in programming (C++ and Front-End Development), I bring structured thinking and problem-solving skills into my creative work — ensuring projects are delivered efficiently, professionally, and on time.</p>
-        <p>
-            What I can help you with:
-        • Social Media Motion Graphics
-        • Animated Ads & Promotional Videos
-        • Logo Animation
-        • Explainer Videos
-        • Text Animation
-        • Video Editing
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-greeting reveal">Hi, I'm</p>
+            <h1 class="hero-name reveal">Basel Mohamed</h1>
+            <div class="hero-titles reveal">
+                <span class="hero-title-item">Motion Graphics Designer</span>
+                <span class="hero-title-sep">|</span>
+                <span class="hero-title-item">Video Editor</span>
+                <span class="hero-title-sep">|</span>
+                <span class="hero-title-item">Visual Storyteller</span>
+            </div>
+            <p class="hero-tagline reveal">Turning ideas into engaging visual stories.</p>
+            <div class="hero-buttons reveal">
+                <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
 
-        I’m committed to quality, creativity, and clear communication. Let’s work together to bring your vision to life.</p>
-    </div>
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">01 / About</span>
+                <h2 class="section-title">Who I Am</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="about-lead">A creative <strong>Motion Graphics Designer</strong> and <strong>Computer Engineering student</strong> with a passion for turning ideas into engaging visual stories.</p>
+                    <p>I specialize in creating eye-catching motion graphics, animated social media content, explainer videos, and promotional videos that help brands stand out and connect with their audience. Using tools like <strong>Adobe After Effects</strong> and <strong>Adobe Illustrator</strong>, I focus on smooth animations, clean design, and strong visual impact.</p>
+                    <p>With a background in programming (C++ and Front-End Development), I bring structured thinking and problem-solving skills into my creative work — ensuring projects are delivered efficiently, professionally, and on time.</p>
+                </div>
+                <div class="about-stats reveal">
+                    <div class="stat-card">
+                        <span class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </span>
+                        <span class="stat-label">Focus</span>
+                        <span class="stat-value">Motion Design</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        </span>
+                        <span class="stat-label">Education</span>
+                        <span class="stat-value">Computer Engineering</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                        </span>
+                        <span class="stat-label">Approach</span>
+                        <span class="stat-value">Creative + Technical</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="section profile-img">
-        <img src="https://cdn-icons-png.flaticon.com/512/9203/9203764.png" alt="Profile Picture">
-    </div>
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">02 / Services</span>
+                <h2 class="section-title">What I Do</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </div>
+                    <h3>Social Media Motion Graphics</h3>
+                    <p>Scroll-stopping animated content designed to boost engagement and brand visibility across all social platforms.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                    </div>
+                    <h3>Animated Ads & Promo Videos</h3>
+                    <p>High-impact promotional videos and animated advertisements that capture attention and drive results.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.912 5.813a2 2 0 0 0 1.275 1.275L21 12l-5.813 1.912a2 2 0 0 0-1.275 1.275L12 21l-1.912-5.813a2 2 0 0 0-1.275-1.275L3 12l5.813-1.912a2 2 0 0 0 1.275-1.275L12 3z"></path></svg>
+                    </div>
+                    <h3>Logo Animation</h3>
+                    <p>Bring your brand identity to life with sleek, memorable logo reveals and animated brand elements.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                    </div>
+                    <h3>Explainer Videos</h3>
+                    <p>Clear, engaging animated explainers that simplify complex concepts and connect with your audience.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
+                    </div>
+                    <h3>Text Animation</h3>
+                    <p>Dynamic kinetic typography and text animations that make your message impossible to ignore.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path><circle cx="12" cy="13" r="3"></circle></svg>
+                    </div>
+                    <h3>Video Editing</h3>
+                    <p>Professional video editing with seamless transitions, color grading, and polished final delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="section">
-        <h2>Profession</h2>
-        <ul>
-            <li>Motion graphic desgin</li>
-            <li>websites building</li>
-            <li>video editing</li>
-        </ul>
-    </div>
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">03 / Skills</span>
+                <h2 class="section-title">My Toolkit</h2>
+            </div>
+            <div class="skills-layout">
+                <div class="skills-group reveal">
+                    <h3 class="skills-group-title">Creative Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Adobe After Effects</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Adobe Illustrator</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Adobe Premiere Pro</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Adobe InDesign</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-group reveal">
+                    <h3 class="skills-group-title">Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C / C++</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML / CSS</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">Basic</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming in C, C++, and Python</li>
-            <li>Basic web development (HTML/CSS/js)</li>
-            <li>Adobe After Effects</li>
-            <li>Adobe Illustrator</li>
-            <li>Adobe Premiere Pro </li>
-            <li>Adobe Adobe InDesign</li>
-        </ul>
-    </div>
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">04 / Experience</span>
+                <h2 class="section-title">My Journey</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">Course</span>
+                        <h3>DEPI — Motion Graphic Designer</h3>
+                        <p>Completed a comprehensive motion graphics design course covering animation principles, visual storytelling, and industry-standard workflows with Adobe After Effects and Illustrator.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">Course</span>
+                        <h3>We SPACE CODE — Front-End Development</h3>
+                        <p>Built a strong foundation in front-end web development including HTML, CSS, JavaScript, and responsive design principles.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">Education</span>
+                        <h3>Computer Engineering — Misr University for Science & Technology</h3>
+                        <p>Studying computer engineering with a focus on programming, algorithms, and system design — bridging the gap between technology and creative design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="section contact">
-        <h2>Contact Info</h2>
-        <p>Email: <a href="mailto:baselmohamed9085@gmail.com">baselmohamed9085@gmail.com</a><br>
-        Phone: <span>01000928095</span></p>
-    </div>
+    <!-- Quote Section -->
+    <section class="section quote-section">
+        <div class="container">
+            <div class="quote-block reveal">
+                <svg class="quote-icon" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                <blockquote>"The best way to predict the future is to invent it."</blockquote>
+                <cite>— Alan Kay</cite>
+            </div>
+        </div>
+    </section>
 
-    <div class="section">
-        <h2>Favourtie quote</h2>
-        <blockquote>"The best way to predict the future is to invent it." - Alan Kay</blockquote>
-    </div>
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">05 / Contact</span>
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <p class="contact-lead">I'm committed to quality, creativity, and clear communication. Ready to bring your vision to life? Let's talk.</p>
+                    <div class="contact-methods">
+                        <a href="mailto:baselmohamed9085@gmail.com" class="contact-method">
+                            <div class="contact-method-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div>
+                                <span class="contact-method-label">Email</span>
+                                <span class="contact-method-value">baselmohamed9085@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+2001000928094" class="contact-method">
+                            <div class="contact-method-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div>
+                                <span class="contact-method-label">Phone</span>
+                                <span class="contact-method-value">01000928094</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/basel-mohamed-khairy-b0247737b/" target="_blank" rel="noopener noreferrer" class="contact-method">
+                            <div class="contact-method-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </div>
+                            <div>
+                                <span class="contact-method-label">LinkedIn</span>
+                                <span class="contact-method-value">Basel Mohamed Khairy</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrap reveal">
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p class="hidden" style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="section">
-        <h2>Links</h2>
-        <p>Visit my <a href="https://www.linkedin.com/in/basel-mohamed-khairy-b0247737b/">linkedin</a> profile.</p>
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">Basel Mohamed</a>
+                <p class="footer-copy">&copy; 2026 Basel Mohamed. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/basel-mohamed-khairy-b0247737b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="mailto:baselmohamed9085@gmail.com" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // Mobile navigation toggle
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        navToggle.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            navToggle.classList.remove('active');
+        });
+    });
+
+    // Scroll reveal animation
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealOnScroll = () => {
+        revealElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 80) {
+                el.classList.add('revealed');
+            }
+        });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+
+    // Skill bar animation
+    const skillFills = document.querySelectorAll('.skill-fill');
+    const animateSkills = () => {
+        skillFills.forEach(fill => {
+            const rect = fill.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 50) {
+                fill.style.width = fill.dataset.width + '%';
+            }
+        });
+    };
+    window.addEventListener('scroll', animateSkills);
+    window.addEventListener('load', animateSkills);
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+    </script>
 
 </body>
 </html>
-
