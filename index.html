@@ -2,73 +2,184 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Profile</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio for Marwan Fouad Farouk, a cybersecurity-focused Computer Science student at Cairo University.">
+    <title>Marwan Fouad Farouk | Cybersecurity Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="#top">MF</a>
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#training">Training</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-    <h1>Basel Mohamed Portfolio</h1>
+    <main id="top">
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Cybersecurity Student</p>
+                <h1>Marwan Fouad Farouk</h1>
+                <p class="hero-text">
+                    Computer Science student at Cairo University focused on host-based monitoring, network defense,
+                    packet analysis, and practical security hardening.
+                </p>
+                <div class="hero-actions" aria-label="Contact actions">
+                    <a class="button primary" href="mailto:marwanfoad94@gmail.com">Email Me</a>
+                    <a class="button secondary" href="https://linkedin.com/in/marwan-foad-86326a24a/" target="_blank" rel="noreferrer">LinkedIn</a>
+                </div>
+            </div>
 
-    <div class="section">
-        <h2>About Me</h2>
-        <p>Hey! I'm <strong>Basel</strong>, a computer engineering student at <strong>Misr University for Science and Technology</strong> in Cairo, Egypt. Motion Graphics Designer | Video Editor | Creative Visual Storyteller.</p>
-        <p> a creative Motion Graphics Designer and Computer Engineering student with a passion for turning ideas into engaging visual stories.</p>
-        <p>I specialize in creating eye-catching motion graphics, animated social media content, explainer videos, and promotional videos that help brands stand out and connect with their audience. Using tools like Adobe After Effects and Adobe Illustrator, I focus on smooth animations, clean design, and strong visual impact.
-            With a background in programming (C++ and Front-End Development), I bring structured thinking and problem-solving skills into my creative work — ensuring projects are delivered efficiently, professionally, and on time.</p>
-        <p>
-            What I can help you with:
-        • Social Media Motion Graphics
-        • Animated Ads & Promotional Videos
-        • Logo Animation
-        • Explainer Videos
-        • Text Animation
-        • Video Editing
+            <aside class="signal-panel" aria-label="Profile highlights">
+                <div class="scanline"></div>
+                <p class="panel-label">Focus Areas</p>
+                <ul>
+                    <li>Threat detection</li>
+                    <li>Network hardening</li>
+                    <li>HIDS monitoring</li>
+                    <li>Packet analysis</li>
+                </ul>
+                <div class="status-grid" aria-label="Education status">
+                    <span>Major</span>
+                    <strong>Cybersecurity</strong>
+                    <span>Degree</span>
+                    <strong>BSc, Expected 2027</strong>
+                    <span>Location</span>
+                    <strong>Cairo, Egypt</strong>
+                </div>
+            </aside>
+        </section>
 
-        I’m committed to quality, creativity, and clear communication. Let’s work together to bring your vision to life.</p>
-    </div>
+        <section class="intro-section" aria-labelledby="summary-title">
+            <div>
+                <p class="section-kicker">Professional Summary</p>
+                <h2 id="summary-title">Building defensive security skills through real systems and simulations.</h2>
+            </div>
+            <p>
+                I am seeking a cybersecurity internship where I can apply hands-on experience in networking,
+                host-based security monitoring, cryptography, and defense-in-depth strategies. My practical work
+                includes Wazuh / OSSEC HIDS deployments, Cisco Packet Tracer network security labs, Wireshark
+                packet analysis, and JavaScript cryptography implementations.
+            </p>
+        </section>
 
-    <div class="section profile-img">
-        <img src="https://cdn-icons-png.flaticon.com/512/9203/9203764.png" alt="Profile Picture">
-    </div>
+        <section class="section-shell" id="projects" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <p class="section-kicker">Technical Projects</p>
+                <h2 id="projects-title">Security work with practical attack and defense coverage.</h2>
+            </div>
 
-    <div class="section">
-        <h2>Profession</h2>
-        <ul>
-            <li>Motion graphic desgin</li>
-            <li>websites building</li>
-            <li>video editing</li>
-        </ul>
-    </div>
+            <div class="project-grid">
+                <article class="project-card featured">
+                    <span class="tag">Wazuh / OSSEC</span>
+                    <h3>HIDS Simulation</h3>
+                    <p>Implemented a centralized manager-agent HIDS to monitor endpoints and respond to suspicious activity.</p>
+                    <ul>
+                        <li>Configured File Integrity Monitoring to detect unauthorized system file changes.</li>
+                        <li>Used Rootcheck for rootkit detection and hidden-process anomaly checks.</li>
+                        <li>Built active response strategies to block malicious IP addresses during attacks.</li>
+                    </ul>
+                </article>
 
-    <div class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming in C, C++, and Python</li>
-            <li>Basic web development (HTML/CSS/js)</li>
-            <li>Adobe After Effects</li>
-            <li>Adobe Illustrator</li>
-            <li>Adobe Premiere Pro </li>
-            <li>Adobe Adobe InDesign</li>
-        </ul>
-    </div>
+                <article class="project-card">
+                    <span class="tag">Packet Tracer / Wireshark</span>
+                    <h3>Enterprise Network Security Simulation</h3>
+                    <p>Designed a segmented enterprise network using routers, switches, VLANs, NAT, and ACL policies.</p>
+                    <ul>
+                        <li>Controlled access between network zones with ACLs.</li>
+                        <li>Validated traffic behavior with Wireshark captures and protocol analysis.</li>
+                    </ul>
+                </article>
 
-    <div class="section contact">
-        <h2>Contact Info</h2>
-        <p>Email: <a href="mailto:baselmohamed9085@gmail.com">baselmohamed9085@gmail.com</a><br>
-        Phone: <span>01000928095</span></p>
-    </div>
+                <article class="project-card">
+                    <span class="tag">JavaScript</span>
+                    <h3>Cryptography</h3>
+                    <p>Implemented AES, DES, and LFSR algorithms with encryption and decryption simulations.</p>
+                </article>
 
-    <div class="section">
-        <h2>Favourtie quote</h2>
-        <blockquote>"The best way to predict the future is to invent it." - Alan Kay</blockquote>
-    </div>
+                <article class="project-card compact">
+                    <span class="tag">Robotics</span>
+                    <h3>Line Follower Robot</h3>
+                    <p>Designed IR sensor-based track navigation and improved accuracy through calibration.</p>
+                </article>
+            </div>
+        </section>
 
-    <div class="section">
-        <h2>Links</h2>
-        <p>Visit my <a href="https://www.linkedin.com/in/basel-mohamed-khairy-b0247737b/">linkedin</a> profile.</p>
-    </div>
+        <section class="timeline-section" id="training" aria-labelledby="training-title">
+            <div class="section-heading">
+                <p class="section-kicker">Certifications & Training</p>
+                <h2 id="training-title">Network and security training path.</h2>
+            </div>
 
+            <div class="timeline">
+                <article>
+                    <time>Aug - Sep 2025</time>
+                    <h3>CCNA Training | NTI</h3>
+                    <p>Studied routing, switching, subnetting, VLANs, IPv4 / IPv6 addressing, and ACL implementation.</p>
+                </article>
+                <article>
+                    <time>Jul - Aug 2025</time>
+                    <h3>Network Security Scholarship | NTI</h3>
+                    <p>Designed secure networks with VLAN segmentation and firewall policies to mitigate attacks.</p>
+                </article>
+                <article>
+                    <time>Jul - Aug 2024</time>
+                    <h3>HCIA Cybersecurity Training | Huawei</h3>
+                    <p>Learned threat defense, VPN scenarios, and enterprise firewall configuration.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="skills-section" id="skills" aria-labelledby="skills-title">
+            <div class="section-heading">
+                <p class="section-kicker">Technical Skills</p>
+                <h2 id="skills-title">Tools and fundamentals for security operations.</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div>
+                    <h3>Cybersecurity</h3>
+                    <p>HIDS, FIM, rootkit detection, firewalls, VPNs, hardening</p>
+                </div>
+                <div>
+                    <h3>Networking</h3>
+                    <p>Routing, VLANs, NAT, ACLs, Packet Tracer, Wireshark</p>
+                </div>
+                <div>
+                    <h3>Programming</h3>
+                    <p>Python, C++, JavaScript, Java</p>
+                </div>
+                <div>
+                    <h3>Soft Skills</h3>
+                    <p>Problem solving, communication, leadership</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="education-contact" id="contact" aria-labelledby="contact-title">
+            <div>
+                <p class="section-kicker">Education</p>
+                <h2>Cairo University</h2>
+                <p>Faculty of Computer & Artificial Intelligence</p>
+                <p>Bachelor of Computer Science, Major: Cybersecurity</p>
+                <p>Expected 2027</p>
+            </div>
+            <div>
+                <p class="section-kicker">Contact</p>
+                <h2 id="contact-title">Available for cybersecurity internships.</h2>
+                <address>
+                    <a href="tel:+201279646915">01279646915</a>
+                    <a href="mailto:marwanfoad94@gmail.com">marwanfoad94@gmail.com</a>
+                    <a href="https://linkedin.com/in/marwan-foad-86326a24a/" target="_blank" rel="noreferrer">linkedin.com/in/marwan-foad-86326a24a</a>
+                </address>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
-
